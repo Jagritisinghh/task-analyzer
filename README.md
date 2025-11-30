@@ -8,8 +8,8 @@ This guide assumes you have Python 3.10+ and Git installed on your system.
 
 1.1. Clone the Repository
 
-git clone [https://github.com/your-username/smart-task-analyzer.git](https://github.com/your-username/smart-task-analyzer.git)
-cd smart-task-analyzer
+git clone [https://github.com/Jagritisinghh/task-analyzer.git](https://github.com/Jagritisinghh/task-analyzer.git)
+cd task-analyzer
 
 
 1.2. Create and Activate Virtual Environment
