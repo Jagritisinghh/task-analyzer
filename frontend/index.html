@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Task Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Smart Task Analyzer </h1>
+            <p>We do the thinking, you do the work.</p>
+        </header>
+
+        <!-- Input Section -->
+        <section class="card input-section">
+            <form id="taskForm">
+                <div class="form-group">
+                    <label>Task Name</label>
+                    <input type="text" id="title" placeholder="e.g., Fix the production bug" required>
+                </div>
+                
+                <div class="row">
+                    <div class="form-group">
+                        <label>Importance (1-5)</label>
+                        <select id="importance">
+                            <option value="1">1 - Low</option>
+                            <option value="2">2 - Medium-Low</option>
+                            <option value="3" selected>3 - Medium</option>
+                            <option value="4">4 - High</option>
+                            <option value="5">5 - Critical</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Effort (1-5)</label>
+                        <select id="effort">
+                            <option value="1">1 - Quick Win</option>
+                            <option value="2">2 - Easy</option>
+                            <option value="3" selected>3 - Moderate</option>
+                            <option value="4">4 - Hard</option>
+                            <option value="5">5 - Huge Project</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Due Date</label>
+                        <input type="date" id="dueDate">
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary">Analyze & Add</button>
+            </form>
+        </section>
+
+        <!-- List Section -->
+        <section class="task-list-container">
+            <h2>Prioritized Queue</h2>
+            <div id="taskList" class="task-list">
+                <!-- JS will inject items here -->
+            </div>
+        </section>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
